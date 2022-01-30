@@ -1,4 +1,4 @@
-FROM pytorch:1.8.0-cuda11.1-cudnn8-runtime
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-runtime
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && apt-get upgrade -y --allow-unauthenticated && \
     apt-get install -y --allow-unauthenticated build-essential
